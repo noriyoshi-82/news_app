@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="uth-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>NewsApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,5 +18,9 @@
 
   <body>
     <%= yield %>
+    <!-- Optional JavaScript -->
+     <script src="js/jquery-3.5.1.min.js"></script>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
