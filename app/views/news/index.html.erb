@@ -1,0 +1,13 @@
+<h1>News</h1>
+<hr>
+<div id="result">no information...</div>
+<script>
+var f = function(){
+  $.ajax({
+    type: 'GET'
+    url: '/news/data'
+  });
+};
+
+f();
+</script>
