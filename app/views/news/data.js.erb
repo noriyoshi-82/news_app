@@ -1,7 +1,7 @@
 var data = <%== @data %>;
 var result = '<div class="datas row d-flex">'
 data.forEach(function(e){
-  var div = '<div class="data col-4">'
+  var div = '<div class="data col-3">'
   if (e.urlToImage != null) {
   result += div
     result += '<img src="' + e.urlToImage +'" class="image_data">';
