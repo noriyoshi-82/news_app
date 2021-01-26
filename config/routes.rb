@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "news#index"
   get 'news/data'
   get 'news/index'
+  get 'news/show'
 end
