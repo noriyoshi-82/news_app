@@ -24,8 +24,13 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <li class="nav-item mt-2 ml-2">
+        <% unless user_signed_in? %>
+          <a><%= link_to "新規登録", new_user_registration_path, class:"sign-up" %></a>
+          <a><%= link_to "ログイン", new_user_session_path, class:"login" %></a>
+        <% else %>
+          <a><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"log-out" %></a>
+        <% end %>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
