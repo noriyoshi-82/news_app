@@ -4,7 +4,7 @@ class NewsController < ApplicationController
 
   def show
   end
-  
+
   def data
     api = ENV['NEWS_KEY']
     uri = URI.parse("http://newsapi.org/v2/top-headlines?country=jp&apiKey=#{api}")
@@ -12,5 +12,4 @@ class NewsController < ApplicationController
     moments = JSON.parse(json)
     @data = moments['articles'].to_json
   end
-  
 end
