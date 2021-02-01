@@ -1,4 +1,4 @@
-document.addEventListener('DOMCotenantLoaded', function() {
+window.addEventListener('load', function() {
   var Timer = function(startTime, endTime, endMessage, outputDestination) {
     this.startTime = startTime;
     this.endTime = endTime;
@@ -54,8 +54,6 @@ document.addEventListener('DOMCotenantLoaded', function() {
 
     }
   }
-  var myTimer = new Timer('2020/12/31 00:00:00', '2100/1/31 23:59:59', '終了!', 'timer');
+  var myTimer = new Timer('2021/02/01 00:00:00', '2021/04/18 23:59:59', '終了!', 'timer');
   myTimer.countDown();
-
-
-},false)
+});
